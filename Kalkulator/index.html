@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            button{
+                font-size:26px;
+                width:80px;
+            }
+            input{
+                font-size:20px;
+                color:black;
+                width:150px;
+                padding:5px;
+            }
+            #konzola{
+                width:320px;
+                margin-bottom:10px;
+                background:   rgba(190, 227, 244, 0.73);
+            }
+            #wrapper{
+                width:350px;
+                margin:auto;
+                background: linear-gradient(-90deg, rgba(22, 132, 157, 0.82) 0%, rgba(9, 90, 121, 0.79) 35%, rgba(144, 219, 234, 0.66) 100%);
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body style=" background: linear-gradient(-90deg, rgba(190, 227, 244, 0.73) 0%, rgba(236, 236, 255, 0.55) 35%, rgba(96, 192, 212, 0.56) 100%);">
+        <h1 style="text-align: center;">Calculate</h1>
+        <div id="wrapper">
+            <input type="text" id="konzola" disabled>
+            <div>
+                <input type="text" id="unos1">
+                <input type="text" id="unos2">
+            </div>
+                <br>
+            <div>
+                <button onclick="izvrsi('+')">+</button>
+                <button onclick="izvrsi('-')">-</button>
+                <button onclick="izvrsi('*')">*</button>
+                <button onclick="izvrsi('/')">/</button>
+            </div>
+            <br>
+            <div>
+                <button onclick="ocisti()">Clear</button>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
